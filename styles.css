@@ -1,0 +1,29 @@
+body {
+    font-family: "Yu Gothic", YuGothic, "游ゴシック", "MS PGothic", sans-serif;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.input-container, .output-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#textInput, #output {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    margin: 10px;
+}
+
+.buttons button {
+    margin-right: 10px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ooameShusei</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="comment-box">
+        <p>コピーしたデータを左に貼り付け、「テキストを修正、出力」ボタンを押してください。空白を削除し、データの間に「,」を追加します。</p>
+    </div>
+    <div class="buttons">
+        <button id="processButton">テキストを修正、出力</button>
+        <button id="copyButton">出力したテキストをコピー</button>
+        <button id="resetButton">リセット</button>
+    </div>
+    <div class="container">
+        <div class="input-container">
+            <textarea id="textInput" rows="60" cols="50"></textarea>
+            
+        </div>
+        <div class="output-container">
+            <textarea id="output" rows="60" cols="50" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
