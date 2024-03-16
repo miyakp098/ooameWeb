@@ -31,19 +31,16 @@ function modifyText(text) {
 document.getElementById('copyButton').addEventListener('click', copyText);
 
 function copyText() {
-    const outputDiv = document.getElementById('output');
-
-    // テキストを選択してクリップボードにコピー
-    const selection = window.getSelection();
-    const range = document.createRange();
-    range.selectNodeContents(outputDiv);
-    selection.removeAllRanges();
-    selection.addRange(range);
-    document.execCommand('copy');
-    selection.removeAllRanges();
-
-    // コピー完了メッセージを表示
-    alert('右のテキストボックス内をコピーしました');
+    // テキストエリアの要素を取得
+    var textarea = document.getElementById("output");
+    
+    // テキストを選択してコピー
+    textarea.select();
+    document.execCommand("copy");
+    
+    // 選択を解除
+    window.getSelection().removeAllRanges();
+    alert('テキストがクリップボードにコピーされました。');
 }
 
 document.getElementById('resetButton').addEventListener('click', resetText);
